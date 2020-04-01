@@ -25,6 +25,12 @@
                             <a href="{{ path('logout') }}" class="nav-link">Se déconnecter</a>
                         </li>
                     </ul>
+                {% else %}
+                    <ul class="navbar-nav">
+                        <li class="nav_item">
+                            <a href="{{ path('login') }}" class="nav-link">Se connecter</a>
+                        </li>
+                    </ul>
                 {% endif %}
             </div>
         </nav>
